@@ -7,9 +7,36 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_testSprite</sprite>
+    <sprite>sprites\spr_missing</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Engine">
+      <script>scripts\init_game.gml</script>
+      <script>scripts\end_game.gml</script>
+      <scripts name="Resource Loading">
+        <script>scripts\resource_sprite_init.gml</script>
+        <script>scripts\resource_sprite_load.gml</script>
+        <script>scripts\resource_sprite_delete.gml</script>
+      </scripts>
+      <scripts name="Error Handling/Debug">
+        <script>scripts\init_stderr.gml</script>
+        <script>scripts\end_stderr.gml</script>
+        <script>scripts\stderr_write.gml</script>
+        <script>scripts\stderr_error.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Utility">
+      <script>scripts\current_date.gml</script>
+      <script>scripts\os_info.gml</script>
+    </scripts>
+  </scripts>
+  <shaders name="shaders"/>
+  <objects name="objects"/>
+  <constants number="1">
+    <constant name="null">-1</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
