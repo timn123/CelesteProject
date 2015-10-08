@@ -1,6 +1,8 @@
 //os_info();
 //returns a string.
 
+//TODO: Add Mac, Android, iOS, Ubuntu, and everything else to this
+
 _typeID = os_version;
 _osVersion = "Unknown";
 

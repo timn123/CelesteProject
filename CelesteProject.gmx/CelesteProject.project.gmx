@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_missing</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_testSprite</sprite>
     <sprite>sprites\spr_missing</sprite>
@@ -19,6 +21,9 @@
         <script>scripts\resource_sprite_init.gml</script>
         <script>scripts\resource_sprite_load.gml</script>
         <script>scripts\resource_sprite_delete.gml</script>
+        <script>scripts\resource_sound_init.gml</script>
+        <script>scripts\resource_sound_load.gml</script>
+        <script>scripts\resource_sound_delete.gml</script>
       </scripts>
       <scripts name="Error Handling/Debug">
         <script>scripts\init_stderr.gml</script>
@@ -30,10 +35,9 @@
     <scripts name="Utility">
       <script>scripts\current_date.gml</script>
       <script>scripts\os_info.gml</script>
+      <script>scripts\file_get_extension.gml</script>
     </scripts>
   </scripts>
-  <shaders name="shaders"/>
-  <objects name="objects"/>
   <constants number="1">
     <constant name="null">-1</constant>
   </constants>
